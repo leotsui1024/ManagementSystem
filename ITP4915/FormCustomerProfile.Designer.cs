@@ -80,6 +80,7 @@
             buttonSystemMaintenance.TabIndex = 6;
             buttonSystemMaintenance.Text = "System Maintenance";
             buttonSystemMaintenance.UseVisualStyleBackColor = false;
+            buttonSystemMaintenance.Click += buttonSystemMaintenance_Click;
             // 
             // dataGridView2
             // 
@@ -109,6 +110,7 @@
             button5SystemMaintenance.TabIndex = 4;
             button5SystemMaintenance.Text = "Security Control";
             button5SystemMaintenance.UseVisualStyleBackColor = false;
+            button5SystemMaintenance.Click += button5SystemMaintenance_Click;
             // 
             // button4CustomerProfile
             // 
@@ -120,6 +122,7 @@
             button4CustomerProfile.TabIndex = 4;
             button4CustomerProfile.Text = "Customer Profile";
             button4CustomerProfile.UseVisualStyleBackColor = false;
+            button4CustomerProfile.Click += button4CustomerProfile_Click;
             // 
             // Button3InventoryControl
             // 
@@ -131,6 +134,7 @@
             Button3InventoryControl.TabIndex = 4;
             Button3InventoryControl.Text = "Inventory Control";
             Button3InventoryControl.UseVisualStyleBackColor = false;
+            Button3InventoryControl.Click += Button3InventoryControl_Click;
             // 
             // button2ProjectManagement
             // 
@@ -142,6 +146,7 @@
             button2ProjectManagement.TabIndex = 4;
             button2ProjectManagement.Text = "Project Management";
             button2ProjectManagement.UseVisualStyleBackColor = false;
+            button2ProjectManagement.Click += button2ProjectManagement_Click;
             // 
             // button6ProductSpecificationManagement
             // 
@@ -153,6 +158,7 @@
             button6ProductSpecificationManagement.TabIndex = 4;
             button6ProductSpecificationManagement.Text = "Product Specification Management";
             button6ProductSpecificationManagement.UseVisualStyleBackColor = false;
+            button6ProductSpecificationManagement.Click += button6ProductSpecificationManagement_Click;
             // 
             // button1SalesOrderManagement
             // 
@@ -164,6 +170,7 @@
             button1SalesOrderManagement.TabIndex = 4;
             button1SalesOrderManagement.Text = "Sales Order Management";
             button1SalesOrderManagement.UseVisualStyleBackColor = false;
+            button1SalesOrderManagement.Click += button1SalesOrderManagement_Click;
             // 
             // panel1
             // 
@@ -229,6 +236,7 @@
             Controls.Add(labelExit);
             FormBorderStyle = FormBorderStyle.None;
             Name = "FormCustomerProfile";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "FormCustomerProfile";
             ((System.ComponentModel.ISupportInitialize)dataGridView2).EndInit();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();

@@ -32,6 +32,7 @@
             ProjectdataGridView1 = new DataGridView();
             label2 = new Label();
             panel1 = new Panel();
+            buttonSystemMaintenance = new Button();
             dataGridView2 = new DataGridView();
             dataGridView1 = new DataGridView();
             button5SystemMaintenance = new Button();
@@ -43,7 +44,6 @@
             label5 = new Label();
             label4 = new Label();
             label3 = new Label();
-            buttonSystemMaintenance = new Button();
             ((System.ComponentModel.ISupportInitialize)ProjectdataGridView1).BeginInit();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView2).BeginInit();
@@ -104,6 +104,18 @@
             panel1.TabIndex = 3;
             panel1.Paint += panel1_Paint;
             // 
+            // buttonSystemMaintenance
+            // 
+            buttonSystemMaintenance.BackColor = Color.FromArgb(110, 172, 218);
+            buttonSystemMaintenance.FlatStyle = FlatStyle.Flat;
+            buttonSystemMaintenance.Location = new Point(12, 379);
+            buttonSystemMaintenance.Name = "buttonSystemMaintenance";
+            buttonSystemMaintenance.Size = new Size(199, 27);
+            buttonSystemMaintenance.TabIndex = 6;
+            buttonSystemMaintenance.Text = "System Maintenance";
+            buttonSystemMaintenance.UseVisualStyleBackColor = false;
+            buttonSystemMaintenance.Click += button1SystemMaintenance_Click_1;
+            // 
             // dataGridView2
             // 
             dataGridView2.BackgroundColor = Color.FromArgb(110, 172, 218);
@@ -134,7 +146,7 @@
             button5SystemMaintenance.TabIndex = 4;
             button5SystemMaintenance.Text = "Security Control";
             button5SystemMaintenance.UseVisualStyleBackColor = false;
-            button5SystemMaintenance.Click += button5_Click;
+            button5SystemMaintenance.Click += button5SecurityControl_Click;
             // 
             // button4CustomerProfile
             // 
@@ -146,7 +158,7 @@
             button4CustomerProfile.TabIndex = 4;
             button4CustomerProfile.Text = "Customer Profile";
             button4CustomerProfile.UseVisualStyleBackColor = false;
-            button4CustomerProfile.Click += button4_Click;
+            button4CustomerProfile.Click += button4CustomerProfile_Click;
             // 
             // Button3InventoryControl
             // 
@@ -158,7 +170,7 @@
             Button3InventoryControl.TabIndex = 4;
             Button3InventoryControl.Text = "Inventory Control";
             Button3InventoryControl.UseVisualStyleBackColor = false;
-            Button3InventoryControl.Click += button3_Click;
+            Button3InventoryControl.Click += button3InventoryControl_Click;
             // 
             // button2ProjectManagement
             // 
@@ -170,7 +182,7 @@
             button2ProjectManagement.TabIndex = 4;
             button2ProjectManagement.Text = "Project Management";
             button2ProjectManagement.UseVisualStyleBackColor = false;
-            button2ProjectManagement.Click += button2_Click;
+            button2ProjectManagement.Click += button2ProjectManagement_Click;
             // 
             // button6ProductSpecificationManagement
             // 
@@ -194,7 +206,7 @@
             button1SalesOrderManagement.TabIndex = 4;
             button1SalesOrderManagement.Text = "Sales Order Management";
             button1SalesOrderManagement.UseVisualStyleBackColor = false;
-            button1SalesOrderManagement.Click += button1_Click;
+            button1SalesOrderManagement.Click += button1SalesOrderManagement_Click;
             // 
             // label5
             // 
@@ -232,18 +244,6 @@
             label3.Text = "Main Page";
             label3.Click += label2_Click;
             // 
-            // buttonSystemMaintenance
-            // 
-            buttonSystemMaintenance.BackColor = Color.FromArgb(110, 172, 218);
-            buttonSystemMaintenance.FlatStyle = FlatStyle.Flat;
-            buttonSystemMaintenance.Location = new Point(12, 379);
-            buttonSystemMaintenance.Name = "buttonSystemMaintenance";
-            buttonSystemMaintenance.Size = new Size(199, 27);
-            buttonSystemMaintenance.TabIndex = 6;
-            buttonSystemMaintenance.Text = "System Maintenance";
-            buttonSystemMaintenance.UseVisualStyleBackColor = false;
-            buttonSystemMaintenance.Click += this.button1_Click_1;
-            // 
             // FormMainPage
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -257,6 +257,7 @@
             Name = "FormMainPage";
             SizeGripStyle = SizeGripStyle.Hide;
             Text = "FormMainPage";
+            Load += FormMainPage_Load;
             ((System.ComponentModel.ISupportInitialize)ProjectdataGridView1).EndInit();
             panel1.ResumeLayout(false);
             panel1.PerformLayout();

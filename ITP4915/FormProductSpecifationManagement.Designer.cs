@@ -33,7 +33,7 @@
             buttonSystemMaintenance = new Button();
             dataGridView2 = new DataGridView();
             dataGridView1 = new DataGridView();
-            button5SystemMaintenance = new Button();
+            button5SecurityControl = new Button();
             button4CustomerProfile = new Button();
             Button3InventoryControl = new Button();
             button2ProjectManagement = new Button();
@@ -80,6 +80,7 @@
             buttonSystemMaintenance.TabIndex = 6;
             buttonSystemMaintenance.Text = "System Maintenance";
             buttonSystemMaintenance.UseVisualStyleBackColor = false;
+            buttonSystemMaintenance.Click += buttonSystemMaintenance_Click;
             // 
             // dataGridView2
             // 
@@ -99,16 +100,17 @@
             dataGridView1.Size = new Size(131, 25);
             dataGridView1.TabIndex = 5;
             // 
-            // button5SystemMaintenance
+            // button5SecurityControl
             // 
-            button5SystemMaintenance.BackColor = Color.FromArgb(110, 172, 218);
-            button5SystemMaintenance.FlatStyle = FlatStyle.Flat;
-            button5SystemMaintenance.Location = new Point(12, 411);
-            button5SystemMaintenance.Name = "button5SystemMaintenance";
-            button5SystemMaintenance.Size = new Size(199, 27);
-            button5SystemMaintenance.TabIndex = 4;
-            button5SystemMaintenance.Text = "Security Control";
-            button5SystemMaintenance.UseVisualStyleBackColor = false;
+            button5SecurityControl.BackColor = Color.FromArgb(110, 172, 218);
+            button5SecurityControl.FlatStyle = FlatStyle.Flat;
+            button5SecurityControl.Location = new Point(12, 411);
+            button5SecurityControl.Name = "button5SecurityControl";
+            button5SecurityControl.Size = new Size(199, 27);
+            button5SecurityControl.TabIndex = 4;
+            button5SecurityControl.Text = "Security Control";
+            button5SecurityControl.UseVisualStyleBackColor = false;
+            button5SecurityControl.Click += button5SecurityControl_Click;
             // 
             // button4CustomerProfile
             // 
@@ -120,6 +122,7 @@
             button4CustomerProfile.TabIndex = 4;
             button4CustomerProfile.Text = "Customer Profile";
             button4CustomerProfile.UseVisualStyleBackColor = false;
+            button4CustomerProfile.Click += button4CustomerProfile_Click;
             // 
             // Button3InventoryControl
             // 
@@ -131,6 +134,7 @@
             Button3InventoryControl.TabIndex = 4;
             Button3InventoryControl.Text = "Inventory Control";
             Button3InventoryControl.UseVisualStyleBackColor = false;
+            Button3InventoryControl.Click += Button3InventoryControl_Click;
             // 
             // button2ProjectManagement
             // 
@@ -142,6 +146,7 @@
             button2ProjectManagement.TabIndex = 4;
             button2ProjectManagement.Text = "Project Management";
             button2ProjectManagement.UseVisualStyleBackColor = false;
+            button2ProjectManagement.Click += button2ProjectManagement_Click;
             // 
             // button6ProductSpecificationManagement
             // 
@@ -153,6 +158,7 @@
             button6ProductSpecificationManagement.TabIndex = 4;
             button6ProductSpecificationManagement.Text = "Product Specification Management";
             button6ProductSpecificationManagement.UseVisualStyleBackColor = false;
+            button6ProductSpecificationManagement.Click += button6ProductSpecificationManagement_Click;
             // 
             // button1SalesOrderManagement
             // 
@@ -164,6 +170,7 @@
             button1SalesOrderManagement.TabIndex = 4;
             button1SalesOrderManagement.Text = "Sales Order Management";
             button1SalesOrderManagement.UseVisualStyleBackColor = false;
+            button1SalesOrderManagement.Click += button1SalesOrderManagement_Click_2;
             // 
             // panel1
             // 
@@ -171,7 +178,7 @@
             panel1.Controls.Add(buttonSystemMaintenance);
             panel1.Controls.Add(dataGridView2);
             panel1.Controls.Add(dataGridView1);
-            panel1.Controls.Add(button5SystemMaintenance);
+            panel1.Controls.Add(button5SecurityControl);
             panel1.Controls.Add(button4CustomerProfile);
             panel1.Controls.Add(Button3InventoryControl);
             panel1.Controls.Add(button2ProjectManagement);
@@ -244,7 +251,7 @@
         private Button buttonSystemMaintenance;
         private DataGridView dataGridView2;
         private DataGridView dataGridView1;
-        private Button button5SystemMaintenance;
+        private Button button5SecurityControl;
         private Button button4CustomerProfile;
         private Button Button3InventoryControl;
         private Button button2ProjectManagement;

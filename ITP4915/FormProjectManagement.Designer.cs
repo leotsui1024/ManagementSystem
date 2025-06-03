@@ -42,6 +42,7 @@
             label5 = new Label();
             label4 = new Label();
             label2 = new Label();
+            labelExit = new Label();
             ((System.ComponentModel.ISupportInitialize)dataGridView2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             panel1.SuspendLayout();
@@ -68,6 +69,7 @@
             buttonSystemMaintenance.TabIndex = 6;
             buttonSystemMaintenance.Text = "System Maintenance";
             buttonSystemMaintenance.UseVisualStyleBackColor = false;
+            buttonSystemMaintenance.Click += buttonSystemMaintenance_Click_2;
             // 
             // dataGridView2
             // 
@@ -97,6 +99,7 @@
             button5SystemMaintenance.TabIndex = 4;
             button5SystemMaintenance.Text = "Security Control";
             button5SystemMaintenance.UseVisualStyleBackColor = false;
+            button5SystemMaintenance.Click += button5SecurityControl_Click_2;
             // 
             // button4CustomerProfile
             // 
@@ -108,6 +111,7 @@
             button4CustomerProfile.TabIndex = 4;
             button4CustomerProfile.Text = "Customer Profile";
             button4CustomerProfile.UseVisualStyleBackColor = false;
+            button4CustomerProfile.Click += button4CustomerProfile_Click_2;
             // 
             // Button3InventoryControl
             // 
@@ -119,6 +123,7 @@
             Button3InventoryControl.TabIndex = 4;
             Button3InventoryControl.Text = "Inventory Control";
             Button3InventoryControl.UseVisualStyleBackColor = false;
+            Button3InventoryControl.Click += Button3InventoryControl_Click_2;
             // 
             // button2ProjectManagement
             // 
@@ -130,6 +135,7 @@
             button2ProjectManagement.TabIndex = 4;
             button2ProjectManagement.Text = "Project Management";
             button2ProjectManagement.UseVisualStyleBackColor = false;
+            button2ProjectManagement.Click += button2ProjectManagement_Click_2;
             // 
             // button6ProductSpecificationManagement
             // 
@@ -141,6 +147,7 @@
             button6ProductSpecificationManagement.TabIndex = 4;
             button6ProductSpecificationManagement.Text = "Product Specification Management";
             button6ProductSpecificationManagement.UseVisualStyleBackColor = false;
+            button6ProductSpecificationManagement.Click += button6ProductSpecificationManagement_Click;
             // 
             // button1SalesOrderManagement
             // 
@@ -152,6 +159,7 @@
             button1SalesOrderManagement.TabIndex = 4;
             button1SalesOrderManagement.Text = "Sales Order Management";
             button1SalesOrderManagement.UseVisualStyleBackColor = false;
+            button1SalesOrderManagement.Click += button1SalesOrderManagement_Click_2;
             // 
             // panel1
             // 
@@ -207,11 +215,23 @@
             label2.TabIndex = 2;
             label2.Text = "Welcome!";
             // 
+            // labelExit
+            // 
+            labelExit.AutoSize = true;
+            labelExit.Font = new Font("Tahoma", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            labelExit.Location = new Point(771, 9);
+            labelExit.Name = "labelExit";
+            labelExit.Size = new Size(17, 18);
+            labelExit.TabIndex = 11;
+            labelExit.Text = "X";
+            labelExit.Click += labelExit_Click_1;
+            // 
             // FormProjectManagement
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(labelExit);
             Controls.Add(panel1);
             Controls.Add(label3);
             FormBorderStyle = FormBorderStyle.None;
@@ -240,5 +260,6 @@
         private Label label5;
         private Label label4;
         private Label label2;
+        private Label labelExit;
     }
 }

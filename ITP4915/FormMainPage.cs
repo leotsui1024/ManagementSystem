@@ -37,35 +37,35 @@ namespace ITP4915
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void button1SalesOrderManagement_Click(object sender, EventArgs e)
         {
             FormSalesOrderManagement formTarget = new FormSalesOrderManagement();
             formTarget.Show();
             this.Hide();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void button2ProjectManagement_Click(object sender, EventArgs e)
         {
             FormProjectManagement formTarget = new FormProjectManagement();
             formTarget.Show();
             this.Hide();
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void button3InventoryControl_Click(object sender, EventArgs e)
         {
             FormInventoryControl formTarget = new FormInventoryControl();
             formTarget.Show();
             this.Hide();
         }
 
-        private void button4_Click(object sender, EventArgs e)
+        private void button4CustomerProfile_Click(object sender, EventArgs e)
         {
             FormCustomerProfile formTarget = new FormCustomerProfile();
             formTarget.Show();
             this.Hide();
         }
 
-        private void button5_Click(object sender, EventArgs e)
+        private void button5SecurityControl_Click(object sender, EventArgs e)
         {
             FormSecurityControl formTarget = new FormSecurityControl();
             formTarget.Show();
@@ -101,11 +101,16 @@ namespace ITP4915
 
         }
 
-        private void button1_Click_1(object sender, EventArgs e)
+        private void button1SystemMaintenance_Click_1(object sender, EventArgs e)
         {
             FormSystemMaintenance formTarget = new FormSystemMaintenance();
             formTarget.Show();
             this.Hide();
+        }
+
+        private void FormMainPage_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
