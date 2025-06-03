@@ -33,13 +33,13 @@
             label5 = new Label();
             pictureBox1 = new PictureBox();
             panel2 = new Panel();
-            button1 = new Button();
+            buttonLogin = new Button();
             textBox2 = new TextBox();
             label4 = new Label();
             textBox1 = new TextBox();
             label3 = new Label();
             label2 = new Label();
-            label1 = new Label();
+            labelExit = new Label();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel2.SuspendLayout();
@@ -96,34 +96,34 @@
             // panel2
             // 
             panel2.BackColor = SystemColors.Window;
-            panel2.Controls.Add(button1);
+            panel2.Controls.Add(buttonLogin);
             panel2.Controls.Add(textBox2);
             panel2.Controls.Add(label4);
             panel2.Controls.Add(textBox1);
             panel2.Controls.Add(label3);
             panel2.Controls.Add(label2);
-            panel2.Controls.Add(label1);
+            panel2.Controls.Add(labelExit);
             panel2.Dock = DockStyle.Right;
             panel2.Location = new Point(245, 0);
             panel2.Name = "panel2";
             panel2.Size = new Size(305, 400);
             panel2.TabIndex = 1;
             // 
-            // button1
+            // buttonLogin
             // 
-            button1.BackColor = Color.FromArgb(2, 21, 38);
-            button1.FlatAppearance.BorderColor = SystemColors.Window;
-            button1.FlatAppearance.BorderSize = 0;
-            button1.FlatStyle = FlatStyle.Flat;
-            button1.Font = new Font("Tahoma", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button1.ForeColor = SystemColors.Window;
-            button1.Location = new Point(34, 252);
-            button1.Name = "button1";
-            button1.Size = new Size(85, 28);
-            button1.TabIndex = 4;
-            button1.Text = "LOGIN";
-            button1.UseVisualStyleBackColor = false;
-            button1.Click += button1_Click;
+            buttonLogin.BackColor = Color.FromArgb(2, 21, 38);
+            buttonLogin.FlatAppearance.BorderColor = SystemColors.Window;
+            buttonLogin.FlatAppearance.BorderSize = 0;
+            buttonLogin.FlatStyle = FlatStyle.Flat;
+            buttonLogin.Font = new Font("Tahoma", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            buttonLogin.ForeColor = SystemColors.Window;
+            buttonLogin.Location = new Point(34, 252);
+            buttonLogin.Name = "buttonLogin";
+            buttonLogin.Size = new Size(85, 28);
+            buttonLogin.TabIndex = 4;
+            buttonLogin.Text = "LOGIN";
+            buttonLogin.UseVisualStyleBackColor = false;
+            buttonLogin.Click += button1_Click;
             // 
             // textBox2
             // 
@@ -148,7 +148,7 @@
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(229, 23);
             textBox1.TabIndex = 3;
-            textBox1.TextChanged += this.textBox1_TextChanged_2;
+            textBox1.TextChanged += textBox1_TextChanged_2;
             // 
             // label3
             // 
@@ -169,18 +169,18 @@
             label2.Size = new Size(82, 28);
             label2.TabIndex = 1;
             label2.Text = "LOGIN";
-            label2.Click += this.label2_Click;
+            label2.Click += label2_Click;
             // 
-            // label1
+            // labelExit
             // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Tahoma", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label1.Location = new Point(285, 4);
-            label1.Name = "label1";
-            label1.Size = new Size(17, 18);
-            label1.TabIndex = 0;
-            label1.Text = "X";
-            label1.Click += label1_Click_1;
+            labelExit.AutoSize = true;
+            labelExit.Font = new Font("Tahoma", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            labelExit.Location = new Point(285, 4);
+            labelExit.Name = "labelExit";
+            labelExit.Size = new Size(17, 18);
+            labelExit.TabIndex = 0;
+            labelExit.Text = "X";
+            labelExit.Click += label1_Click_1;
             // 
             // FormLogin
             // 
@@ -205,8 +205,8 @@
 
         private Panel panel1;
         private Panel panel2;
-        private Label label1;
-        private Button button1;
+        private Label labelExit;
+        private Button buttonLogin;
         private TextBox textBox2;
         private Label label4;
         private TextBox textBox1;

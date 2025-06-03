@@ -16,5 +16,10 @@ namespace ITP4915
         {
             InitializeComponent();
         }
+
+        private void button6ProductSpecificationManagement_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

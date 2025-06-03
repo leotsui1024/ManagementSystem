@@ -10,19 +10,14 @@ using System.Windows.Forms;
 
 namespace ITP4915
 {
-    public partial class FormProductSpecifationManagement : Form
+    public partial class FormSecurityControl : Form
     {
-        public FormProductSpecifationManagement()
+        public FormSecurityControl()
         {
             InitializeComponent();
         }
 
         private void label1_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
-
-        private void button1SalesOrderManagement_Click(object sender, EventArgs e)
         {
 
         }

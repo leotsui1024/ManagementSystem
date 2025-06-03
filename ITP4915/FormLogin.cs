@@ -54,7 +54,9 @@ namespace ITP4915
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            FormMainPage formTarget = new FormMainPage();
+            formTarget.Show();
+            this.Hide();
         }
 
         private void label5_Click(object sender, EventArgs e)

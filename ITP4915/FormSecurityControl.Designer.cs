@@ -1,6 +1,6 @@
 ﻿namespace ITP4915
 {
-    partial class FormCustomerProfile
+    partial class FormSecurityControl
     {
         /// <summary>
         /// Required designer variable.
@@ -29,20 +29,20 @@
         private void InitializeComponent()
         {
             label3 = new Label();
-            labelExit = new Label();
-            buttonSystemMaintenance = new Button();
             dataGridView2 = new DataGridView();
             dataGridView1 = new DataGridView();
+            button1 = new Button();
             button5SystemMaintenance = new Button();
             button4CustomerProfile = new Button();
             Button3InventoryControl = new Button();
             button2ProjectManagement = new Button();
             button6ProductSpecificationManagement = new Button();
             button1SalesOrderManagement = new Button();
-            panel1 = new Panel();
             label5 = new Label();
             label4 = new Label();
+            panel1 = new Panel();
             label2 = new Label();
+            label1 = new Label();
             ((System.ComponentModel.ISupportInitialize)dataGridView2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             panel1.SuspendLayout();
@@ -53,33 +53,11 @@
             label3.AutoSize = true;
             label3.Font = new Font("Tahoma", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label3.ForeColor = SystemColors.ControlText;
-            label3.Location = new Point(237, 9);
+            label3.Location = new Point(231, 9);
             label3.Name = "label3";
-            label3.Size = new Size(146, 19);
-            label3.TabIndex = 9;
-            label3.Text = "Customer Profile";
-            // 
-            // labelExit
-            // 
-            labelExit.AutoSize = true;
-            labelExit.Font = new Font("Tahoma", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            labelExit.Location = new Point(777, 9);
-            labelExit.Name = "labelExit";
-            labelExit.Size = new Size(17, 18);
-            labelExit.TabIndex = 8;
-            labelExit.Text = "X";
-            labelExit.Click += label1_Click;
-            // 
-            // buttonSystemMaintenance
-            // 
-            buttonSystemMaintenance.BackColor = Color.FromArgb(110, 172, 218);
-            buttonSystemMaintenance.FlatStyle = FlatStyle.Flat;
-            buttonSystemMaintenance.Location = new Point(12, 379);
-            buttonSystemMaintenance.Name = "buttonSystemMaintenance";
-            buttonSystemMaintenance.Size = new Size(199, 27);
-            buttonSystemMaintenance.TabIndex = 6;
-            buttonSystemMaintenance.Text = "System Maintenance";
-            buttonSystemMaintenance.UseVisualStyleBackColor = false;
+            label3.Size = new Size(94, 19);
+            label3.TabIndex = 4;
+            label3.Text = "Main Page";
             // 
             // dataGridView2
             // 
@@ -98,6 +76,17 @@
             dataGridView1.Name = "dataGridView1";
             dataGridView1.Size = new Size(131, 25);
             dataGridView1.TabIndex = 5;
+            // 
+            // button1
+            // 
+            button1.BackColor = Color.FromArgb(110, 172, 218);
+            button1.FlatStyle = FlatStyle.Flat;
+            button1.Location = new Point(12, 378);
+            button1.Name = "button1";
+            button1.Size = new Size(199, 27);
+            button1.TabIndex = 4;
+            button1.Text = "System Maintenance";
+            button1.UseVisualStyleBackColor = false;
             // 
             // button5SystemMaintenance
             // 
@@ -165,27 +154,6 @@
             button1SalesOrderManagement.Text = "Sales Order Management";
             button1SalesOrderManagement.UseVisualStyleBackColor = false;
             // 
-            // panel1
-            // 
-            panel1.BackColor = Color.FromArgb(3, 52, 110);
-            panel1.Controls.Add(buttonSystemMaintenance);
-            panel1.Controls.Add(dataGridView2);
-            panel1.Controls.Add(dataGridView1);
-            panel1.Controls.Add(button5SystemMaintenance);
-            panel1.Controls.Add(button4CustomerProfile);
-            panel1.Controls.Add(Button3InventoryControl);
-            panel1.Controls.Add(button2ProjectManagement);
-            panel1.Controls.Add(button6ProductSpecificationManagement);
-            panel1.Controls.Add(button1SalesOrderManagement);
-            panel1.Controls.Add(label5);
-            panel1.Controls.Add(label4);
-            panel1.Controls.Add(label2);
-            panel1.Dock = DockStyle.Left;
-            panel1.Location = new Point(0, 0);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(225, 450);
-            panel1.TabIndex = 10;
-            // 
             // label5
             // 
             label5.AutoSize = true;
@@ -208,6 +176,27 @@
             label4.TabIndex = 2;
             label4.Text = "Name:";
             // 
+            // panel1
+            // 
+            panel1.BackColor = Color.FromArgb(3, 52, 110);
+            panel1.Controls.Add(dataGridView2);
+            panel1.Controls.Add(dataGridView1);
+            panel1.Controls.Add(button1);
+            panel1.Controls.Add(button5SystemMaintenance);
+            panel1.Controls.Add(button4CustomerProfile);
+            panel1.Controls.Add(Button3InventoryControl);
+            panel1.Controls.Add(button2ProjectManagement);
+            panel1.Controls.Add(button6ProductSpecificationManagement);
+            panel1.Controls.Add(button1SalesOrderManagement);
+            panel1.Controls.Add(label5);
+            panel1.Controls.Add(label4);
+            panel1.Controls.Add(label2);
+            panel1.Dock = DockStyle.Left;
+            panel1.Location = new Point(0, 0);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(225, 450);
+            panel1.TabIndex = 5;
+            // 
             // label2
             // 
             label2.AutoSize = true;
@@ -219,17 +208,28 @@
             label2.TabIndex = 2;
             label2.Text = "Welcome!";
             // 
-            // FormCustomerProfile
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Tahoma", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label1.Location = new Point(771, 9);
+            label1.Name = "label1";
+            label1.Size = new Size(17, 18);
+            label1.TabIndex = 6;
+            label1.Text = "X";
+            label1.Click += label1_Click;
+            // 
+            // FormSecurityControl
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(panel1);
+            Controls.Add(label1);
             Controls.Add(label3);
-            Controls.Add(labelExit);
+            Controls.Add(panel1);
             FormBorderStyle = FormBorderStyle.None;
-            Name = "FormCustomerProfile";
-            Text = "FormCustomerProfile";
+            Name = "FormSecurityControl";
+            Text = "FormSecurityControl";
             ((System.ComponentModel.ISupportInitialize)dataGridView2).EndInit();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             panel1.ResumeLayout(false);
@@ -239,20 +239,21 @@
         }
 
         #endregion
+
         private Label label3;
-        private Label labelExit;
-        private Button buttonSystemMaintenance;
         private DataGridView dataGridView2;
         private DataGridView dataGridView1;
+        private Button button1;
         private Button button5SystemMaintenance;
         private Button button4CustomerProfile;
         private Button Button3InventoryControl;
         private Button button2ProjectManagement;
         private Button button6ProductSpecificationManagement;
         private Button button1SalesOrderManagement;
-        private Panel panel1;
         private Label label5;
         private Label label4;
+        private Panel panel1;
         private Label label2;
+        private Label label1;
     }
 }
