@@ -43,9 +43,11 @@
             label4 = new Label();
             label2 = new Label();
             labelExit = new Label();
+            dataGridView3 = new DataGridView();
             ((System.ComponentModel.ISupportInitialize)dataGridView2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridView3).BeginInit();
             SuspendLayout();
             // 
             // label3
@@ -226,21 +228,32 @@
             labelExit.Text = "X";
             labelExit.Click += labelExit_Click_1;
             // 
+            // dataGridView3
+            // 
+            dataGridView3.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView3.Location = new Point(237, 125);
+            dataGridView3.Name = "dataGridView3";
+            dataGridView3.Size = new Size(551, 313);
+            dataGridView3.TabIndex = 12;
+            // 
             // FormProjectManagement
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(dataGridView3);
             Controls.Add(labelExit);
             Controls.Add(panel1);
             Controls.Add(label3);
             FormBorderStyle = FormBorderStyle.None;
             Name = "FormProjectManagement";
             Text = "FormProjectManagement";
+            Load += FormProjectManagement_Load;
             ((System.ComponentModel.ISupportInitialize)dataGridView2).EndInit();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridView3).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -261,5 +274,6 @@
         private Label label4;
         private Label label2;
         private Label labelExit;
+        private DataGridView dataGridView3;
     }
 }

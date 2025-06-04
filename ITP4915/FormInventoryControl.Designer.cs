@@ -60,6 +60,7 @@
             label3.Size = new Size(153, 19);
             label3.TabIndex = 9;
             label3.Text = "Inventory Control";
+            label3.Click += label3_Click;
             // 
             // labelExit
             // 
