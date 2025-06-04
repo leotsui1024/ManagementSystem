@@ -90,7 +90,7 @@ namespace ITP4915
                 {
                     con.Open();
                 }
-                string query = "SELECT * FROM [Customer]";
+                string query = "SELECT * FROM [Product]";
                 OleDbDataAdapter da = new OleDbDataAdapter(query, con);
                 DataTable dt = new DataTable();
                 da.Fill(dt);
